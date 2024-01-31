@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  background-color: ghostwhite;
+}
+
+p {
+  font-weight:lighter;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+h3 {
+  color: white;
+}
+
+main {
+  width: 960px;
+  margin: auto;
+} 
+
+svg {
+  border: 1px solid magenta;
+
+}
+
+.box {
+  fill: #dd8324;
+}
+
+#UIContainer {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  border: 2px solid black;
+  height: 110px;
+  /* background-color: #E91F5A; */
+  background-color: #58595B;
+  color: white; 
+}
+
+#searchButton {
+  height: 4rem;
+  border: 2px solid black;
+  padding: 1rem;
+  margin-top: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  background-color: ghostwhite;
+}
+
+#searchButton:hover {
+  cursor: pointer;
+  scale: 0.99;
+  background-color: #E91F5A;
+  color: ghostwhite;
+}
+
+fieldset {
+  margin: auto;
+  display: inline-block;
+  height: 100px;
+  width: 165px;
+  /* padding: 0.5rem; */
+  border: none;
+  margin-left: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+#controls {
+  width: 320px;
+}
+
+#matrix {
+  width: 250px; 
+}
+
+/* ! For final you don't need the UI unless you want it!   */
+/* fieldset, ul {
+  display: none;
+} */
