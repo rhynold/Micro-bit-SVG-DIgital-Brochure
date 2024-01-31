@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-ca">
+  <head>
+    <!-- Specify Character Encoding -->
+    <meta charset="UTF-8" />
+    <!-- Controls Layout on Browsers -->
+    <meta name="viewport" content="width=device-width" minimum-scale="1.0" />
+    <!-- Who are you? -->
+    <meta name="author" content="Your Name" />
+    <!-- Attach Stylesheet -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- Name Your Page -->
+    <title>Micro:bit to SVG Template</title>
+  </head>
+
+  <body>
+    <main>
+      <header></header>
+      <!-- ! THIS IS INLINE YOUR PROJECT WILL USE IT AS AN EMBEDDING OBJECT -->
+      <!-- <svg id="vb" viewbox="0 0 1600 900">
+        <rect id="bx" class="box" x="0" y="0" width="200px" height="200px"></rect>
+      </svg> -->
+
+      <!-- ! 1.0 USE EMBEDDED SVG OBJECT -->
+      <object id="mainSVG" data="img/mainSVG-01.svg" type="image/svg+xml"></object>
+
+
+
+      <section id="UIContainer">
+        <!-- ! 1.1 Delete the onClick function -->
+        <button id="searchButton">Search Device</button>
+
+        <fieldset id="buttonContainer">
+          <h3>Active Buttons:</h3>
+          <ul class="property">
+            <li>Button A: <span id="buttonA" class="value"></span></li>
+            <li>Button B: <span id="buttonB" class="value"></span></li>
+          </ul>
+        </fieldset>
+        <fieldset id="controls">
+          <h3>Controls:</h3>
+          <p>Hold down <span>A</span> for 3 seconds to view city.</p>
+          <p>Hold down <span>B</span> for 3 seconds to view nature.</p>
+          <p>Double click <span>A</span> or <span>B</span> to return to main menu.</p>
+          <p>Click <span>A</span> and <span>B</span> together to claim reward.</p>
+        </fieldset>
+        <fieldset id="matrix">
+          <h3>LED Matrix</h3>
+          <p>Updates to the corresponding page being displayed.</p>
+          <h3>Temperature:</h3>
+          <p>Current: <span id="temperature" class="value"></span></p>
+        </fieldset>
+      </section>  
+    </main>
+
+    <!-- *  GSAP on server  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+
+    <!-- * Add Micro:bit library to our page -->
+    <script type="text/javascript" src="js/vendor/microBit.js"></script>
+    
+    <!-- * Local GSAP3  -->
+    <script type="text/javascript" src="js/vendor/gsap.min.js"></script>
+
+    <!-- * Add your JS Script -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
